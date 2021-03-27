@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package paintapplication;
-
+import java.awt.Dimension;
+import paintapplication.Canvas;
+import paintapplication.Draw;
 /**
  *
  * @author Amruta
@@ -16,6 +18,10 @@ public class PaintApplication {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Draw draw = new Draw();
+        Dimension d = draw.getCanvasDimension();
+        draw.setDimension(d.width, d.height);
+        draw.startPaint();
     }
     
 }
